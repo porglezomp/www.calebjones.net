@@ -1,0 +1,48 @@
+a { color: green; text-decoration: none; }
+a:hover { color: lightgreen; text-decoration: underline; }
+
+body {
+    font-size: 1.4em;
+    font-family: 'Merriweather', serif;
+    background-color: #ffe;
+    margin: 0;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: green;
+    text-decoration: none;
+}
+
+h2.post-title { margin: 0; }
+h1 a:hover { color: lightgreen; }
+
+body > * {
+    max-width: 34em;
+    margin: 0 auto;
+}
+
+ol#post-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer.post-info {
+    font-size: 0.75em;
+    color: grey;
+}
+footer.post-info a { color: grey; }
+
+footer#contentinfo {
+    font-size: 0.5em;
+    padding: 1em 0;
+    border-top: solid 1px green;
+    text-align: center;
+    color: grey;
+    font-style: italic;
+}
+
+li article { border-bottom: 0.5px dotted lightgrey; margin-bottom: 0.5em; }
+li:last-child article {
+    border-bottom: 0;
+}
+p { margin: 0.5em 0; }
