@@ -4,6 +4,7 @@ Off-the-Shelf is Good
 =====================
 :date: 2016-02-04
 :author: Caleb Jones
+:status: published
 
 I wrote my own Markdown parser because I wanted the option to add features, and to generate more semantic HTML than I was used to with other static site/blogging platforms.
 That turned out to be a maintainability problem, and I never got some of the more tricky features like lists (and especially nested lists) working propertly.
