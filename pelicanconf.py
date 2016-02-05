@@ -10,6 +10,7 @@ PATH = 'content'
 
 TIMEZONE = 'EST'
 
+DEFAULT_DATE_FORMAT = '%B %d, %Y'
 DEFAULT_LANG = u'en'
 DEFAULT_METADATA = {
     'status': 'draft',

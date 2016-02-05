@@ -1,14 +1,12 @@
-{% extends "!simple/base.html" %} 
+{% extends "simple_base.html" %} 
 
 {% block head %}
-{{ super() }}
+  {{ super() }}
   <link href="{{ SITEURL }}/theme/css/style.css" rel="stylesheet"/>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,400italic' rel='stylesheet' type='text/css'>
 {% endblock %}
 
-{% block body %}
-<ul>
-{% for article in articles %}
-  <li><a href="{{ article.url }}">{{ article.title }}</a></li>
-{% endfor %}
-</ul>
+{% block content_info %}
+  {{ super() }}
+  <small>Copyright 2016 Caleb Jones.</small>
 {% endblock %}
