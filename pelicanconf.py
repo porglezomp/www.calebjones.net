@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = u'Caleb Jones'
-SITENAME = u'Emacs and Chill'
+AUTHOR = 'Caleb Jones'
+SITENAME = 'Emacs and Chill'
 SITEURL = ''
 
 PATH = 'content'
@@ -24,11 +24,13 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = ()
+LINKS = (
+)
 
 # Social widget
-SOCIAL = (('GitHub', 'https://github.com/porglezomp'),
-          ('Twitter', 'https://twitter.com/porglezomp'),
+SOCIAL = (
+    ('GitHub', 'https://github.com/porglezomp'),
+    ('Twitter', 'https://twitter.com/porglezomp'),
 )
 
 DEFAULT_PAGINATION = 10
@@ -36,3 +38,21 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 THEME = 'theme'
+
+# Disable author pages, since I'm the only one writing content
+AUTHOR_URL = ''
+
+# Improve URLS
+PAGINATION_PATTERNS = (
+    (1, '{base_name}/', '{base_name}/index.html'),
+    (2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index.html'),
+)
+
+ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
+ARTICLE_SAVE_AS = ARTICLE_URL + 'index.html'
+DRAFT_URL = 'drafts/{slug}/'
+DRAFT_SAVE_AS = DRAFT_URL + 'index.html'
+PAGE_URL = '{slug}/'
+PAGE_SAVE_AS = PAGE_URL + 'index.html'
+TAG_URL =  'tag/{slug}/'
+TAG_SAVE_AS = TAG_URL + 'index.html'
