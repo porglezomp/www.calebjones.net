@@ -2,7 +2,7 @@ a { color: green; text-decoration: none; }
 a:hover { color: lightgreen; text-decoration: underline; }
 
 body {
-    font-size: 1.4em;
+    font-size: 1.3em;
     font-family: 'Merriweather', serif;
     background-color: #ffe;
     margin: 0;
@@ -16,7 +16,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 h2.post-title { margin: 0; }
 h1 a:hover { color: lightgreen; }
 
-body > * {
+body > main, body > header, body > footer {
     max-width: 34em;
     margin: 0 auto;
 }
@@ -46,3 +46,4 @@ li:last-child article {
     border-bottom: 0;
 }
 p { margin: 0.5em 0; }
+small { font-size: 1em; }
