@@ -2,7 +2,7 @@ a { color: green; text-decoration: none; }
 a:hover { color: lightgreen; text-decoration: underline; }
 
 body {
-    font-size: 1.3em;
+    font-size: 1.25em;
     font-family: 'Merriweather', serif;
     background-color: #ffe;
     margin: 0;
@@ -13,28 +13,29 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     text-decoration: none;
 }
 
-h2.post-title { margin: 0; }
+.post-title { margin: 0; }
 h1 a:hover { color: lightgreen; }
 
 body > main, body > header, body > footer {
-    max-width: 34em;
+    max-width: 42rem;
     margin: 0 auto;
 }
 
-ol#post-list {
+#post-list {
     list-style-type: none;
     padding: 0;
 }
 
-footer.post-info {
-    font-size: 0.75em;
+.post-info {
+    font-size: 0.8em;
     color: grey;
 }
-footer.post-info a { color: grey; }
+.post-info a { color: grey; }
 
-footer#contentinfo {
-    font-size: 0.5em;
-    padding: 1em 0;
+#contentinfo {
+    font-size: 0.6em;
+    padding: 1em;
+    margin-top: 1em;
     border-top: solid 1px green;
     text-align: center;
     color: grey;
@@ -45,5 +46,15 @@ li article { border-bottom: 0.5px dotted lightgrey; margin-bottom: 0.5em; }
 li:last-child article {
     border-bottom: 0;
 }
-p { margin: 0.5em 0; }
+p {
+    margin: 0.5em 0;
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto; /* doesn't actually work */
+    word-break: break-word;
+    hyphens: auto;
+    line-height: 1.2em;
+}
 small { font-size: 1em; }
