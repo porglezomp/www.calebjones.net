@@ -29,16 +29,25 @@ p {
 body > main, body > header, body > footer, body > nav {
     max-width: 42rem;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
 }
 
-nav ul { padding: 0; }
+nav ul {
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    padding-right: 1rem;
+}
 
 #banner, nav { border-bottom: solid 1px green; }
 #banner h1 { margin: 0; }
 #contentinfo {
     font-size: 0.6rem;
-    margin-top: 1rem;
     border-top: solid 1px green;
     text-align: center;
     color: grey;

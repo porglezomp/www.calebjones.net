@@ -7,15 +7,16 @@ SITENAME = 'Emacs and Chill'
 SITESUBTITLE = "Caleb Jones' Blog"
 SITEURL = ''
 
+MENUITEMS = [
+    ('Blog', '/'),
+]
+
 PATH = 'content'
 
 TIMEZONE = 'EST'
 
 DEFAULT_DATE_FORMAT = '%B %d, %Y'
 DEFAULT_LANG = u'en'
-DEFAULT_METADATA = {
-    'status': 'draft',
-}
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -49,7 +50,7 @@ PAGINATION_PATTERNS = (
     (2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index.html'),
 )
 
-ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
+ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{slug}/'
 ARTICLE_SAVE_AS = ARTICLE_URL + 'index.html'
 DRAFT_URL = 'drafts/{slug}/'
 DRAFT_SAVE_AS = DRAFT_URL + 'index.html'
