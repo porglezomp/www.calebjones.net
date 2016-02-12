@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Caleb Jones'
 SITENAME = 'Emacs and Chill'
+SITESUBTITLE = "Caleb Jones' Blog"
 SITEURL = ''
 
 PATH = 'content'
