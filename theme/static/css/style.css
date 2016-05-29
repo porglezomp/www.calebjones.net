@@ -2,14 +2,14 @@
 html {
     font-size: 115%;
     font-family: 'Merriweather', serif;
-    background-color: #ffe;
+    background-color: #fffff4;
     color: #222;
 }
 body { margin: 1rem; }
 
 /* Core styles */
-a { color: green; text-decoration: none; }
-a:hover { color: lightgreen; text-decoration: underline; }
+a { color: teal; text-decoration: none; }
+a:hover { color: turquoise3; text-decoration: underline; }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { text-decoration: none; }
 
@@ -44,11 +44,11 @@ nav li {
     padding-right: 1rem;
 }
 
-#banner, nav { border-bottom: solid 1px green; }
+#banner, nav { border-bottom: solid 1px teal; }
 #banner h1 { margin: 0; }
 #contentinfo {
     font-size: 0.6rem;
-    border-top: solid 1px green;
+    border-top: solid 1px teal;
     text-align: center;
     color: grey;
     font-style: italic;
