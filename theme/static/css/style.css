@@ -69,7 +69,11 @@ nav li {
     color: grey;
 }
 
-li article { border-bottom: 0.5px dotted lightgrey; margin-bottom: 0.5rem; }
+article { margin: 1rem 0; }
+li article { border-bottom: 0.5px dotted lightgrey; margin-bottom: 0.5rem; margin-top: 0; }
 li:last-child article {
     border-bottom: 0;
+    margin-bottom: 1rem;
 }
+li:first-child article { margin-top: 1rem; }
+ol { margin: 0; }
