@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page.title }}{%endblock%}
+{% block content %}
+  <main>
+    <article>
+      <header>
+        <h1>{{ page.title }}</h1>
+      </header>
+      {% import 'translations.html' as translations with context %}
+      {{ translations.translations_for(page) }}
+      {{ page.content }}
+      <footer>
+        {% if page.modified %}
+          <p>
+            Last updated: {{ page.locale_modified }}
+          </p>
+        {% endif %}
+      </footer>
+    </article>
+  </main>
+{% endblock %}
