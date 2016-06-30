@@ -39,7 +39,7 @@ SOCIAL = (
 DEFAULT_PAGINATION = 5
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+# RELATIVE_URLS = True
 THEME = 'theme'
 
 # Disable author pages, since I'm the only one writing content
@@ -57,5 +57,5 @@ DRAFT_URL = 'drafts/{slug}/'
 DRAFT_SAVE_AS = DRAFT_URL + 'index.html'
 PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = PAGE_URL + 'index.html'
-TAG_URL =  'tag/{slug}/'
+TAG_URL = 'tag/{slug}/'
 TAG_SAVE_AS = TAG_URL + 'index.html'
