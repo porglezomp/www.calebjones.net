@@ -1,12 +1,21 @@
 /* Background and font */
 html {
-    font-size: 115%;
+    font-size: 62.5%;
     font-family: 'Merriweather', serif;
     background-color: #fffaf0;
     color: #222;
     overflow-x: hidden;
 }
-body { margin: 1rem; }
+body {
+    font-size: 1.8em;
+    margin: 1rem;
+}
+
+/* Monospace reset */
+pre, code, kbd, samp, tt {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
 
 /* Core styles */
 a { color: #2aa198; text-decoration: none; }
@@ -15,7 +24,7 @@ a:hover { color: turquoise3; text-decoration: underline; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { text-decoration: none; }
 
 p {
-    margin: 0.5rem 0;
+    margin: 1.5rem 0;
     text-align: justify;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
@@ -23,12 +32,12 @@ p {
     -o-hyphens: auto; /* doesn't actually work */
     word-break: break-word;
     hyphens: auto;
-    line-height: 1.2rem;
+    line-height: 1.3;
 }
 
 /* Content dimensions */
 body > main, body > header, body > footer, body > nav {
-    max-width: 44rem;
+    max-width: 75rem;
     margin: 0 auto;
     padding: 0.5rem 1rem;
 }
@@ -48,7 +57,7 @@ nav li {
 #banner, nav { border-bottom: solid 1px #2aa198; }
 #banner h1 { margin: 0; }
 #contentinfo {
-    font-size: 0.6rem;
+    font-size: 1.2rem;
     border-top: solid 1px #2aa198;
     text-align: center;
     color: grey;
@@ -56,18 +65,12 @@ nav li {
 }
 #contentinfo small { font-size: 100%; }
 
-
-#site-subtitle { font-size: 0.8rem; color: grey; }
+#site-subtitle, .post-info { font-size: 1.4rem; color: grey; }
 .post-title { margin: 0; }
 
 #post-list {
     list-style-type: none;
     padding: 0;
-}
-
-.post-info {
-    font-size: 0.8rem;
-    color: grey;
 }
 
 article { margin: 1rem 0; }
@@ -79,9 +82,25 @@ li:last-child article {
 li:first-child article { margin-top: 1rem; }
 ol { margin: 0; }
 
+code {
+    background-color: #fdf6e3;
+    color: #586e75;
+    border-radius: 4px;
+    padding: 0 2px;
+    margin: 0 -3px;
+    box-sizing: content-box;
+    vertical-align: middle;
+    font-size: 1.8rem;
+    border: 1px solid #eee8d5;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    hyphens: none;
+}
+
+pre { white-space: pre-wrap; }
 .highlight pre { margin: 0; }
 .literal-block, .highlight {
-    font-size: 0.75rem;
+    font-size: 1.3rem;
     margin: 0.5em -1000%;
     padding: 1em 1000%;
     background-color: #fdf6e3;
