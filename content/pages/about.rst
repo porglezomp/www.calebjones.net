@@ -4,5 +4,5 @@ About
 :slug: about
 
 My name is Caleb Jones.
-This fall I'll be going to the University of Michigan for computer science and engineering.
+I'm a student at the University of Michigan College of Engineering, interested in focusing on computer science.
 I really like programming languages and compilers, but that doesn't mean that I'm not also going to try doing *everything else.*
