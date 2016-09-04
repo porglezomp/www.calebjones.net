@@ -22,6 +22,7 @@ a { color: #2aa198; text-decoration: none; }
 a:hover { color: turquoise3; text-decoration: underline; }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { text-decoration: none; }
+article h3, h4, h5, h6 { font-weight: bold; }
 
 p {
     margin: 1.5rem 0;
