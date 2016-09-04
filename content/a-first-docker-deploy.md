@@ -12,8 +12,7 @@ I want to use Nginx so that I don't have to worry about HTTPS at the Rust level,
 Furthermore, if I ever needed to branch out into load balancing or serving static assets, Nginx would be there already.
 If you want to follow along, then just `cargo new` and we'll get started!
 
-A Rusty Container
------------------
+# A Rusty Container
 
 In [Creating a Basic Webservice in Rust][webservice] they use Docker in order to statically link the executable with musl, not to deploy it.
 Here we're going to go a step further and do the entire deployment with Docker.
@@ -72,8 +71,7 @@ And here's the code for the demo webservice in `src/main.rs`:
         server.listen("0.0.0.0:8080");
     }
 
-Composing a Server
-------------------
+# Composing a Server
 
 Now we want to set up an Nginx reverse proxy.
 At first I was confused about how to combine multiple programs into a single `Dockerfile`, since it only executes one `CMD`.

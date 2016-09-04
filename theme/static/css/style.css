@@ -22,7 +22,10 @@ a { color: #2aa198; text-decoration: none; }
 a:hover { color: turquoise3; text-decoration: underline; }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { text-decoration: none; }
-article h3, h4, h5, h6 { font-weight: bold; }
+article h3, article h4, article h5, article h6 {
+    font-weight: bold;
+    margin-bottom: -0.25rem;
+}
 
 p {
     margin: 1.5rem 0;
@@ -107,6 +110,10 @@ pre { white-space: pre-wrap; }
     background-color: #fdf6e3;
     color: #586e75;
     border: 1px solid #eee8d5;
+}
+
+.instagram-media {
+    margin: 0 auto !important;
 }
 
 /* Solarized Light 

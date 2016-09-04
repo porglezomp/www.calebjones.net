@@ -59,3 +59,11 @@ PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = PAGE_URL + 'index.html'
 TAG_URL = 'tag/{slug}/'
 TAG_SAVE_AS = TAG_URL + 'index.html'
+
+from markdown.extensions.codehilite import CodeHiliteExtension
+from markdown.extensions.headerid import HeaderIdExtension
+MD_EXTENSIONS = [
+    CodeHiliteExtension(css_class='highlight'),
+    HeaderIdExtension(level=3),
+    'markdown.extensions.extra',
+]
