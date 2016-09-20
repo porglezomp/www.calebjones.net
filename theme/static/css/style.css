@@ -29,7 +29,8 @@ article h3, article h4, article h5, article h6 {
 
 p {
     margin: 1.5rem 0;
-    text-align: justify;
+    /* Readability and design issues... */
+    /* text-align: justify; */
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
@@ -41,7 +42,7 @@ p {
 
 /* Content dimensions */
 body > main, body > header, body > footer, body > nav {
-    max-width: 75rem;
+    max-width: 72rem;
     margin: 0 auto;
     padding: 0.5rem 1rem;
 }
@@ -64,7 +65,7 @@ nav li {
     font-size: 1.2rem;
     border-top: solid 1px #2aa198;
     text-align: center;
-    color: grey;
+    color: #707070;
     font-style: italic;
 }
 #contentinfo small { font-size: 100%; }
