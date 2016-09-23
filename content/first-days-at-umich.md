@@ -58,7 +58,12 @@ This was fun to watch!
 
 # Escapade
 
-Piano dance
+Dancing to piano!
+They played some [absolutely][little peculiar] [classic][bohemian rhapsody] [pieces][never gonna].
+
+[little peculiar]: https://www.youtube.com/watch?v=ZZ5LpwO-An4
+[bohemian rhapsody]: https://www.youtube.com/watch?v=fJ9rUzIMcZQ
+[never gonna]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
 
 # Blue Mix
 
@@ -73,7 +78,7 @@ After watching the third bus leave, three mentors and I decided to bike to centr
 
 I was taught the basics of projective geometry, with the specific example being [Pappus's Hexagon Theorem][].
 
-Dependent type theory (presented using notation from [Idris][])
+Dependent type theory (presented using notation from [Idris][]).
 
 [pappus's hexagon theorem]: https://en.wikipedia.org/wiki/Pappus%27s_hexagon_theorem
 [idris]: http://www.idris-lang.org/

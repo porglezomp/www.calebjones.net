@@ -1,3 +1,5 @@
+all: publish
+
 upload: publish
 	aws s3 sync output/posts/ "s3://www.calebjones.net/posts/" --acl public-read --delete
 	aws s3 sync output/theme/ "s3://www.calebjones.net/theme/" --acl public-read --delete
@@ -11,3 +13,7 @@ upload: publish
 publish:
 	pelican -s publishconf.py
 	mkdir -p output/page/
+	@echo 'Do `make upload` to upload'
+
+clean:
+	rm -rf output
