@@ -38,6 +38,15 @@
     </h1>
     <strong id="site-subtitle">{{ SITESUBTITLE }}</strong>
   </header><!-- /#banner -->
+<script>
+ var t= ["Emacs and Chill"
+,"J Language Comment"
+,"Parser Witch"
+,"Down with CISC"
+,"Nyquist-Shannon-Pannenkoek Theorem"
+]
+document.getElementById('site-title').innerText=t[Math.floor(Math.random()*t.length)]
+</script>
   <nav id="menu">
     <ul>
       {% for title, link in MENUITEMS %}

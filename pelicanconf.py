@@ -1,9 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+from markdown.extensions.codehilite import CodeHiliteExtension
+from markdown.extensions.headerid import HeaderIdExtension
 
 AUTHOR = 'Caleb Jones'
-SITENAME = 'Emacs and Chill'
+SITENAME = 'J Language Comment'
 SITESUBTITLE = "Caleb Jones' Blog"
 SITEURL = ''
 
@@ -60,8 +62,6 @@ PAGE_SAVE_AS = PAGE_URL + 'index.html'
 TAG_URL = 'tag/{slug}/'
 TAG_SAVE_AS = TAG_URL + 'index.html'
 
-from markdown.extensions.codehilite import CodeHiliteExtension
-from markdown.extensions.headerid import HeaderIdExtension
 MD_EXTENSIONS = [
     CodeHiliteExtension(css_class='highlight'),
     HeaderIdExtension(level=3),

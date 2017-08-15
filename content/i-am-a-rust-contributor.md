@@ -17,3 +17,8 @@ Try to find a small thing that you can fix in something that you use.
 Somewhere in there is the right issue that you can fix.
 It's a great experience.
 (I really look forward to the release notes for 1.12...)
+
+**Update:**
+It turns out my fix made it into the 1.13 release, and my name is in the [contributors section in the release notes][contributors].
+
+[contributors]: https://blog.rust-lang.org/2016/11/10/Rust-1.13.html#contributors-to-1130

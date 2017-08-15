@@ -37,7 +37,7 @@ p {
     -o-hyphens: auto; /* doesn't actually work */
     word-break: break-word;
     /* hyphens: auto; */
-    line-height: 1.6;
+    line-height: 1.4;
     word-spacing: 0.1em;
 }
 
@@ -101,7 +101,7 @@ code {
     margin: 0 -3px;
     box-sizing: content-box;
     vertical-align: middle;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     border: 1px solid #eee8d5;
     -webkit-hyphens: none;
     -moz-hyphens: none;
