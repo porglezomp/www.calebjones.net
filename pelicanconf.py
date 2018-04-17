@@ -62,8 +62,12 @@ PAGE_SAVE_AS = PAGE_URL + 'index.html'
 TAG_URL = 'tag/{slug}/'
 TAG_SAVE_AS = TAG_URL + 'index.html'
 
-MD_EXTENSIONS = [
-    CodeHiliteExtension(css_class='highlight'),
-    HeaderIdExtension(level=3),
-    'markdown.extensions.extra',
-]
+MARKDOWN = {
+    'extension_config': {
+        'markdown.extensions.codehilite': {'css_class': 'highlight'},
+        'markdown.headerid': {'level': 3},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+    },
+    'output_format': 'html5',
+}
