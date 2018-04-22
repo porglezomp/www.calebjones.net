@@ -3,7 +3,7 @@ Trying Docker
 :date: 2016-06-29
 :tags: docker 
 :slug: trying-docker
-:author: Caleb Jones
+:author: C Jones
 :summary: I want to deploy web apps, so I decided to install Docker.
 :status: published
 

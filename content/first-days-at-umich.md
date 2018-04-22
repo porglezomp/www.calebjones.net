@@ -2,7 +2,7 @@ title: My First Days at the University of Michigan
 date: 2016-09-04
 tags: school; life
 slug: first-days-at-umich
-author: Caleb Jones
+author: C Jones
 summary: I talk about several different nice experiences
 status: draft
 

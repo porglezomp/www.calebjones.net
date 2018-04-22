@@ -2,7 +2,7 @@ title: A First Docker Deploy
 date: 2016-07-01
 tags: docker; rust; nginx
 slug: a-first-docker-deploy
-author: Caleb Jones
+author: C Jones
 summary: I try to deploy a webservice to AWS using Docker
 status: draft
 

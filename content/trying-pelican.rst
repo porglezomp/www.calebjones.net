@@ -5,7 +5,7 @@ Off-the-Shelf is Good
 :date: 2016-02-04
 :tags: meta
 :slug: trying-pelican
-:author: Caleb Jones
+:author: C Jones
 :summary: I restarted my website using Pelican and ReST!
 :status: published
 

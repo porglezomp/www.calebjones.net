@@ -1,12 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
-from markdown.extensions.codehilite import CodeHiliteExtension
-from markdown.extensions.headerid import HeaderIdExtension
 
-AUTHOR = 'Caleb Jones'
+AUTHOR = 'C Jones'
 SITENAME = 'J Language Comment'
-SITESUBTITLE = "Caleb Jones' Blog"
+SITESUBTITLE = "C Jones' Blog"
 SITEURL = ''
 
 MENUITEMS = [
@@ -64,10 +62,18 @@ TAG_SAVE_AS = TAG_URL + 'index.html'
 
 MARKDOWN = {
     'extension_config': {
+        'markdown.extensions.fenced_code': {},
         'markdown.extensions.codehilite': {'css_class': 'highlight'},
-        'markdown.headerid': {'level': 3},
+        'markdown.extensions.headerid': {'level': 3},
         'markdown.extensions.extra': {},
         'markdown.extensions.meta': {},
     },
+    'extensions': [
+        'markdown.extensions.fenced_code',
+        'markdown.extensions.codehilite',
+        'markdown.extensions.headerid',
+        'markdown.extensions.extra',
+        'markdown.extensions.meta',
+    ],
     'output_format': 'html5',
 }

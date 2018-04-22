@@ -2,7 +2,7 @@ title: I'm a Rust Contributor
 date: 2016-09-20
 tags: rust
 slug: i-am-a-rust-contributor
-author: Caleb Jones
+author: C Jones
 summary: I got a PR merged into Rust, wow, that's pretty cool!
 
 A month or two ago I was on the #rust IRC when someone discovered that `pow()` didn't act quite right for unsigned numbers.

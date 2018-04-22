@@ -2,7 +2,7 @@ title: You Got Your Race Condition Inside My Package Manager!
 date: 2017-08-14
 tags: python; PyPI; debugging
 slug: package-manager-race-condition
-author: Caleb Jones
+author: C Jones
 summary: We solve a fun, surreal debugging mystery involving pip and version compatibility.
 
 # A Case of Broken Builds
