@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+
+{% block content %}
+<article class="post">
+  <header>
+    <h1 class="post-title"><a href="{{ page.permalink }}">{{ page.title }}</a></h1>
+  </header>
+  <footer class="post-info">
+    <time class="published" datetime="{{ page.date|date(format="%+") }}">{{ page.date|date(format="%B %d, %Y") }}</time>
+  </footer>
+  <section class="post-content">
+    {{ page.content | safe }}
+  </section>
+</article>
+{% endblock %}

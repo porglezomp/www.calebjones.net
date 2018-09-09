@@ -1,0 +1,46 @@
+{% extends "index.html" %}
+
+{% block content %}
+{% if paginator %}
+  {% set pages = paginator.pages %}
+{% else %}
+  {% set pages = section.pages %}
+{% endif %}
+
+<ol id="post-list">
+{% for page in pages %}
+  <li><article>
+    <header>
+      <h1 class="post-title"><a href="{{ page.permalink }}">{{ page.title }}</a></h1>
+    </header>
+    <footer class="post-info">
+      <time class="published" datetime="{{ page.date|date(format="%+") }}">{{ page.date|date(format="%B %d, %Y") }}</time>
+    </footer>
+    <section class="post-content">
+      {% if page.summary %}
+      {{ page.summary | safe }}
+      <a href="{{ page.permalink }}#continue-reading">Continue Reading</a>
+      {% else %}
+      {{ page.content | safe }}
+      {% endif %}
+    </section>
+  </article></li>
+{% endfor %}
+</ol>
+
+{% if paginator %}
+<nav id="paginator">
+  <ol>
+    {% if paginator.previous %}
+    <li><a href="{{ paginator.first }}">First</a></li>
+    <li><a href="{{ paginator.previous }}">« Previous</a></li>
+    {% endif %}
+    <li>Page {{ paginator.current_index }} / {{ paginator.pagers|length }}</li>
+    {% if paginator.next %}
+    <li><a href="{{ paginator.next }}">Next »</a></li>
+    <li><a href="{{ paginator.last }}">Last</a></li>
+    {% endif %}
+  </ol>
+</nav>
+{% endif %}
+{% endblock %}

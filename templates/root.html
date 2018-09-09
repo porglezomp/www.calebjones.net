@@ -1,0 +1,18 @@
+{% extends "index.html" %}
+
+{% block content %}
+{% for page in paginator.pages %}
+<article>
+  <header>
+    <h1><a href="{{ page.permalink }}">{{ page.title }}</a></h1>
+    <span>{{ page.date | date(format="%F") }}</span>
+  </header>
+  {% if page.summary %}
+  {{ page.summary | safe }}
+  <a href="{{ page.permalink }}#continue-reading">Continue Reading</a>
+  {% else %}
+  {{ page.content | safe }}
+  {% endif %}
+</article>
+{% endfor %}
+{% endblock %}

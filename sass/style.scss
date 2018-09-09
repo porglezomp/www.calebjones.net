@@ -1,0 +1,112 @@
+@mixin hyphens($val) {
+    -webkit-hyphens: $val;
+    -moz-hyphens: $val;
+    -ms-hyphens: $val;
+    -o-hyphens: $val; /* doesn't actually work */
+    hyphens: $val;
+}
+
+/* Background and font */
+html {
+    font-size: 62.5%;
+    font-family: 'Merriweather', Georgia, serif;
+    background-color: #fffcf5;
+    color: #222;
+    overflow-x: hidden;
+}
+body {
+    font-size: 1.8em;
+    margin: 0;
+    padding: 1rem;
+    overflow-x: hidden;
+}
+
+svg.icon { height: 1em; margin-bottom: -.05em; }
+
+/* Monospace reset */
+pre, code, kbd, samp, tt {
+  font-family: monospace;
+  font-size: 1em;
+}
+
+/* Core styles */
+a { color: #2aa198; text-decoration: none; }
+a:hover { color: turquoise3; text-decoration: underline; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { text-decoration: none; }
+article h2, article h3, article h4, article h5, article h6 {
+    font-weight: bold;
+    margin-bottom: -0.25rem;
+}
+
+p {
+    /* Readability and design issues... */
+    // text-align: justify;
+    // @include hyphens(auto);
+    margin: 1.5rem 0;
+    word-break: break-word;
+    line-height: 1.4;
+    word-spacing: 0.1em;
+}
+
+/* Content dimensions */
+body > * {
+    max-width: 69rem;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+}
+
+nav > * { padding: 0; margin: 0; }
+nav li { display: inline-block; padding-right: 1rem; }
+
+// nav#menu { }
+#banner, nav#menu { font-weight: bold; border-bottom: solid 1px #2aa198; }
+#banner h1 { margin: 0; }
+#content-info {
+    font-size: 1.2rem;
+    border-top: solid 1px #2aa198;
+    text-align: center;
+    color: #707070;
+    font-style: italic;
+}
+#paginator { margin: 1.5rem 0; }
+
+#site-subtitle, .post-info { font-size: 1.4rem; color: grey; }
+.post-title { margin: 0; }
+
+#post-list {
+    list-style: none;
+    padding: 0;
+}
+
+article { margin: 1rem 0; }
+li article {
+    padding-bottom: 2rem;
+    border-bottom: 0.5px dashed lightgrey;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+code {
+    // @include hyphens(none);
+    background-color: #fdf6e3;
+    color: #586e75;
+    border-radius: 4px;
+    padding: 0 2px;
+    margin: 0 -2px;
+    // Not sure why I was using this...?
+    // box-sizing: content-box;
+    vertical-align: middle;
+    font-size: 1.7rem;
+    border: 1px solid #eee8d5;
+}
+
+pre {
+    white-space: pre-wrap;
+    font-size: 1.3rem;
+    margin: 0.5em -1000%;
+    padding: 1em 1000%;
+    // background-color: #fdf6e3;
+    // color: #586e75;
+    border: 1px solid #eee8d5;
+}
